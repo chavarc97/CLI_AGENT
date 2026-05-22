@@ -16,6 +16,18 @@ type CommandMenuProps = {
   onExecute: (idx: number) => void;
 };
 
+/**
+ * Render a scrollable command menu filtered by `query` and highlight the currently selected entry.
+ *
+ * Shows a dim "No matching commands" message when the filter yields no results; otherwise renders a scrollable list of commands where hovering selects an entry and mouse-down executes it.
+ *
+ * @param query - Search text used to filter available commands
+ * @param selectedIndex - Index of the currently highlighted command within the filtered list
+ * @param scrollRef - Ref attached to the scroll container for imperative scrolling or measurements
+ * @param onSelect - Callback invoked with an index when a command row is hovered
+ * @param onExecute - Callback invoked with an index when a command row is activated (mouse down)
+ * @returns A React element containing either a placeholder message or a scrollable list of filtered commands
+ */
 export function CommandMenu({
   query,
   selectedIndex,
