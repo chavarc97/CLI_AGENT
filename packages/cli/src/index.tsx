@@ -4,6 +4,11 @@ import { Header } from "./components/header";
 import { StatusBar } from "./components/status-bar";
 import { InputBar } from "./components/input-bar";
 
+/**
+ * Renders the root CLI application UI with a centered header and input bar.
+ *
+ * @returns The React element representing the application's root layout.
+ */
 function App() {
   return (
     <box

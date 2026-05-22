@@ -1,3 +1,8 @@
+/**
+ * Renders a centered header displaying "CLI-" (gray) and "AGENT" (cyan) in tiny ASCII font.
+ *
+ * @returns A JSX element containing a centered layout with two `ascii-font` labels.
+ */
 export function Header() {
   return (
     <box justifyContent="center" alignItems="center">
